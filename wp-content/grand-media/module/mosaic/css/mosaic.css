@@ -1,0 +1,210 @@
+@import url('prettyPhoto/prettyPhoto.css') all;
+
+#pp_full_res {text-align:center;}
+div.ppt {margin:8px 0 2px 15px;}
+div.pp_pic_holder {margin-bottom:20px; z-index:10001;}
+div.pp_overlay {z-index:10000;}
+div.pp_caption {clear:both; overflow:hidden;}
+div.pp_caption p {padding:0; margin:5px 0;}
+.pp_gallery ul a img {object-fit: cover; overflow:hidden; height:100%;}
+
+.pp_details {color: #080808; }
+.pp_content_container .pp_details { float:none; }
+div.dark_rounded .pp_details,
+div.dark_square .pp_details { color: #fefefe; }
+div.pp_social {font-size: 18px;}
+.mosaic-share_sharelizers { font-size:1em; display:block; margin:0; padding:0; list-style:none; white-space:nowrap; overflow:hidden; float:left; height:23px; }
+.mosaic-share_sharelizers li { list-style:none; margin:0; padding:0; display:inline-block; }
+.mosaic-share_sharelizer { box-sizing:content-box; padding:1px; display:inline-block; text-decoration:none; border-radius:3px; border:none; cursor:pointer; line-height:100%; width:1em; height:1em; text-indent:-9999px; overflow:hidden; background:50% 50% no-repeat rgba(109, 109, 109, 0.9);
+  transition:background-color 0.2s ease-in-out; -webkit-transition:background-color 0.2s ease-in-out;}
+.mosaic-share_facebook { background-image:url('../img/facebook@2x.png'); background-size:1em 1em; }
+.mosaic-share_facebook:hover { background-color:#3b5998; }
+.mosaic-share_twitter { background-image:url('../img/twitter@2x.png'); background-size:1em 1em; }
+.mosaic-share_twitter:hover { background-color:#00aced; }
+.mosaic-share_pinterest { background-image:url('../img/pinterest@2x.png'); background-size:1em 1em; }
+.mosaic-share_pinterest:hover { background-color:#cc2127; }
+.mosaic-share_google { background-image:url('../img/google@2x.png'); background-size:1em 1em; }
+.mosaic-share_google:hover { background-color:#d64a2d; }
+.mosaic-share_stumbleupon { background-image:url('../img/stumbleupon@2x.png'); background-size:1em 1em; }
+.mosaic-share_stumbleupon:hover { background-color:#ea4b24; }
+
+.gmMosaic-comments,
+.gmMosaic-likes,
+.gmMosaic-views {
+  cursor:pointer;
+  display:inline-block;
+  float:left;
+  text-align:center;
+  opacity:0.8;
+  filter:alpha(opacity=8);
+  margin-left:15px;
+  height:23px;
+}
+.gmMosaic-views {
+  cursor:default;
+}
+.gmMosaic-comments:hover,
+.gmMosaic-likes:hover,
+.gmMosaic-views:hover {
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+.gmMosaic-comments-count,
+.gmMosaic-likes-count,
+.gmMosaic-views-count {
+  font-size:0.8em;
+}
+.gmMosaic-liked .gmMosaic-likes-icon {
+  color:red;
+}
+
+.gmMosaic-button > span,
+.gmMosaic-button > a,
+.gmMosaic-button > a:hover { display:block; position:relative; color:inherit !important; text-decoration:none !important; outline:none; }
+.gmMosaic-button > span *,
+.gmMosaic-button > a * { display:inline-block; }
+.gmMosaic-button svg {
+  display:block;
+  width:1em;
+  height:1em;
+  fill:currentColor;
+}
+
+.gmMosaic_Container {position:relative;z-index:1;}
+.gmMosaic_Container .gmlove {background:rgba(216,255,22,0.8)!important;float:right!important;position:relative!important;left:0!important;right:0!important;top:0!important;bottom:0!important;z-index:9999999!important;width:auto!important;height:auto!important;text-indent:0!important;overflow:visible!important;display:block!important;padding: 4px 10px!important;margin:0 0 -3em 0!important;font-size:14px!important;line-height:120%!important;color:#123456!important;font-weight:bold!important;}
+.gmMosaic_Container noscript img { height:150px; margin: 2px;}
+/* cloud page */
+.gmedia-main-wrapper .gmedia_gallery.mosaic_module { height:auto; padding:1px 0; }
+.mosaic_module { position:relative; z-index:1; }
+/* reset */
+.gmediaMosaic,
+.gmediaMosaic img, .gmediaMosaic div, .gmediaMosaic span,
+.gmediaMosaic a:link, .gmediaMosaic a:visited, .gmediaMosaic a:active, .gmediaMosaic a:hover {
+	background:none; outline:none; border:0; height:auto; width:auto; max-height:none !important; max-width:none !important;
+	min-height:none !important; min-width:none !important; font-style:normal; font-variant:normal; font-weight:normal;
+	list-style:none; margin:0; padding:0; position:static; float:none; visibility:visible;
+	overflow:visible; color:#000000; letter-spacing:normal; line-height:120%; text-align:left; text-decoration:none;
+	text-indent:0; text-transform:none; vertical-align:baseline; white-space:normal; word-spacing:normal;
+}
+
+/* selective reset */
+.gmediaMosaic img, .gmediaMosaic a:link, .gmediaMosaic a:visited, .gmediaMosaic a:active, .gmediaMosaic a:hover {
+	margin:0 !important; padding:0 !important;
+}
+
+/* base */
+.gmediaMosaic { position:relative; overflow:hidden; margin-bottom:2em; }
+.gmediaMosaic .gmMosaicItem { display:block; overflow:hidden; position:absolute; background-color:transparent;
+  -webkit-transition: background-color 0.3s ease-out 0s;
+  -moz-transition: background-color 0.3s ease-out 0s;
+  -o-transition: background-color 0.3s ease-out 0s;
+  -ms-transition: background-color 0.3s ease-out 0s;
+  transition: background-color 0.3s ease-out 0s;
+}
+
+.gmediaMosaic img.gmMosaicItem_thumb { display:block; position:absolute; top:0; opacity:1;}
+.gmediaMosaic a:hover img.gmMosaicItem_thumb { opacity:0.8; }
+.is_mobile .gmediaMosaic a:hover img.gmMosaicItem_thumb { opacity:1; }
+.gmediaMosaic .gmMosaicItem_caption { display:none; }
+
+/* loading */
+.gmediaMosaic .gmediaMosaicLoading { background:transparent url('../img/spinner-arrows.gif') 0px 0px no-repeat; padding:0 0 0 20px; line-height:20px; }
+
+.gmediaMosaic .gmMosaicItem.loading { background:#efefef url('../img/spinner-snake.gif') 50% 50% no-repeat; }
+
+.GMG_preloadify { visibility:hidden; position:absolute; bottom:5px; right:10px; }
+
+
+/* overflow:hidden; on a container kills 3d */
+/* base */
+.gmediaMosaic img.gmMosaicItem_thumb {
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	-o-transform-origin: center center;
+	-ms-transform-origin: center center;
+	transform-origin: center center;
+
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.resizing .gmediaMosaic img.gmMosaicItem_thumb {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
+
+.gmediaMosaic.transition-none .loading img.gmMosaicItem_thumb { }
+
+.gmediaMosaic.transition-custom .loading img.gmMosaicItem_thumb {
+	/* good for example */
+	opacity:0;
+	-webkit-transform: rotate( -5deg ) scale( 0.95 );
+	-moz-transform: rotate( -5deg ) scale( 0.95 );
+	-o-transform: rotate( -5deg ) scale( 0.95 );
+	-ms-transform: rotate( -5deg ) scale( 0.95 );
+	transform: rotate( -5deg ) scale( 0.95 );
+}
+
+.gmediaMosaic.transition-fade .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+}
+
+.gmediaMosaic.transition-scale-up .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+	-webkit-transform: scale( 0.95 );
+	-moz-transform: scale( 0.95 );
+	-o-transform: scale( 0.95 );
+	-ms-transform: scale( 0.95 );
+	transform: scale( 0.95 );
+}
+
+.gmediaMosaic.transition-scale-down .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+	-webkit-transform: scale( 1.15 );
+	-moz-transform: scale( 1.15 );
+	-o-transform: scale( 1.15 );
+	-ms-transform: scale( 1.15 );
+	transform: scale( 1.15 );
+}
+
+.gmediaMosaic.transition-slide-up .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+	-webkit-transform: translateY( 5% );
+	-moz-transform: translateY( 5% );
+	-o-transform: translateY( 5% );
+	-ms-transform: translateY( 5% );
+	transform: translateY( 5% );
+}
+
+.gmediaMosaic.transition-slide-down .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+	-webkit-transform: translateY( -5% );
+	-moz-transform: translateY( -5% );
+	-o-transform: translateY( -5% );
+	-ms-transform: translateY( -5% );
+	transform: translateY( -5% );
+}
+
+.gmediaMosaic.transition-slide-left .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+	-webkit-transform: translateX( 5% );
+	-moz-transform: translateX( 5% );
+	-o-transform: translateX( 5% );
+	-ms-transform: translateX( 5% );
+	transform: translateX( 5% );
+}
+
+.gmediaMosaic.transition-slide-right .loading img.gmMosaicItem_thumb {
+	opacity: 0;
+	-webkit-transform: translateX( -5% );
+	-moz-transform: translateX( -5% );
+	-o-transform: translateX( -5% );
+	-ms-transform: translateX( -5% );
+	transform: translateX( -5% );
+}
