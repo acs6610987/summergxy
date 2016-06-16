@@ -88,9 +88,9 @@ if(!empty($content)) {
     $json_settings = json_encode($settings);
     ?>
     <div id="mosaic_ID<?php echo $gallery['term_id']; ?>" class="gmMosaic_Container" data-gmid="<?php echo $gallery['term_id']; ?>"><?php
-        if(empty($gmGallery->options['license_key'])) {
+        /*if(empty($gmGallery->options['license_key'])) {
             echo "<a class='gmlove' target='_blank' href='{$module['info']['demo']}'>" . __('built with GmediaGallery', 'grand-media') . "</a>";
-        }
+        }*/
         /*if($is_bot) {*/ ?>
         <noscript><?php
             foreach($content as $item) {
